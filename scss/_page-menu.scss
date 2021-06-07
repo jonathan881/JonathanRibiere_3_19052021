@@ -1,0 +1,191 @@
+@import "./font";
+@import "./variables";
+@import "./mixins";
+@import "./keyframes";
+
+body {
+  margin: 0px;
+}
+.titre-page {
+  &_rtn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &_head {
+    width: 90%;
+  }
+  a {
+    width: 10%;
+  }
+}
+
+.img-menu {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.rtn {
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.6rem;
+}
+.bloc-head {
+  display: flex;
+  width: 100%;
+  &_h2 {
+    margin-left: 5%;
+    padding-top: 30px;
+    font-family: Shrikhand;
+    width: 68%;
+    letter-spacing: 0.07rem;
+  }
+  &_icone {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    font-size: 29px;
+  }
+}
+
+.bloc-global {
+  width: 100%;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  margin-top: -72px;
+  padding-bottom: 75px;
+  background-color: #f6f6f6;
+}
+.bloc-menu {
+  width: 100%;
+  margin-bottom: 45px;
+}
+.nom-plats {
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px;
+}
+.bulle-menu,
+.bulle-menu1 {
+  border: solid transparent;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  animation: slide1 5s forwards;
+  @include Bulle-shadow;
+  &_global {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  &_plats {
+    width: 80%;
+  }
+  &_prix {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 10px;
+    right: 3px;
+    font-weight: bold;
+  }
+  &_nom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  &_accompagnement {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+.btn-commander {
+  width: 90%;
+  margin-left: 5%;
+  &:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  &_bulle {
+    @include Bulle-pink;
+    @include Bulle-shadow;
+    &::hover {
+      background-color: lighten(#e16fda, 90%);
+    }
+  }
+}
+
+@media screen and (min-width: 610px) {
+  .titre-page {
+    @include Bg-heade;
+  }
+  .bloc-head_icone {
+    justify-content: flex-end;
+  }
+  .img-menu {
+    height: 330px;
+  }
+  .bulle-bloc {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    height: 110px;
+    &_1 {
+      width: 45%;
+    }
+  }
+  .bulle-bloc1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .bulle-menu {
+    width: 30%;
+    margin-left: 0px;
+    transform: trasform 0 2s;
+    animation: slide 2s forwards;
+    &_nom {
+      margin-left: 15px;
+    }
+    &_accompagnement {
+      width: 75%;
+      margin-top: 22px;
+      text-overflow: ellipsis;
+    }
+    &_plats {
+      width: 100%;
+    }
+  }
+  .bulle-menu1 {
+    margin-bottom: 30px;
+    width: 90%;
+    animation: slide 5s forwards;
+  }
+  .nom-plats {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  .btn-commander_bulle {
+    width: 50%;
+    margin-left: 25%;
+  }
+}

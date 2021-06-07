@@ -1,0 +1,497 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: bold; }
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(/fonts/Shrikhand/Shrikhand-Regular.ttf);
+  font-weight: normal; }
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes slide1 {
+  0% {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+body {
+  margin: 0px; }
+
+.titre-page_rtn {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+.titre-page_head {
+  width: 90%; }
+.titre-page a {
+  width: 10%; }
+
+.img-menu {
+  object-fit: cover;
+  width: 100%;
+  height: 250px; }
+
+.rtn {
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.6rem; }
+
+.bloc-head {
+  display: flex;
+  width: 100%; }
+  .bloc-head_h2 {
+    margin-left: 5%;
+    padding-top: 30px;
+    font-family: Shrikhand;
+    width: 68%;
+    letter-spacing: 0.07rem; }
+  .bloc-head_icone {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    font-size: 29px; }
+
+.bloc-global {
+  width: 100%;
+  border-radius: 35px 35px 0px 0px;
+  position: relative;
+  margin-top: -72px;
+  padding-bottom: 75px;
+  background-color: #f6f6f6; }
+
+.bloc-menu {
+  width: 100%;
+  margin-bottom: 45px; }
+
+.nom-plats {
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px; }
+
+.bulle-menu,
+.bulle-menu1 {
+  border: solid transparent;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  animation: slide1 5s forwards;
+  box-shadow: 0 0 21px #0000002e; }
+  .bulle-menu_global,
+  .bulle-menu1_global {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative; }
+  .bulle-menu_plats,
+  .bulle-menu1_plats {
+    width: 80%; }
+  .bulle-menu_prix,
+  .bulle-menu1_prix {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 10px;
+    right: 3px;
+    font-weight: bold; }
+  .bulle-menu_nom,
+  .bulle-menu1_nom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .bulle-menu_accompagnement,
+  .bulle-menu1_accompagnement {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px; }
+
+.btn-commander {
+  width: 90%;
+  margin-left: 5%; }
+  .btn-commander:hover {
+    transform: scale(1.1);
+    transition: 2s; }
+  .btn-commander_bulle {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #e16fda;
+    background: -moz-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    background: -webkit-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    box-shadow: 0 0 21px #0000002e;
+    color: white;
+    box-shadow: 0 0 21px #0000002e; }
+    .btn-commander_bulle:hover {
+      background-color: white; }
+    .btn-commander_bulle::hover {
+      background-color: white; }
+
+@media screen and (min-width: 610px) {
+  .titre-page {
+    background: #f6f6f6;
+    background: linear-gradient(177deg, #f6f6f6 0%, #f6f6f6 31%, white 50%, white 70%, #e7f1f0 100%); }
+
+  .bloc-head_icone {
+    justify-content: flex-end; }
+
+  .img-menu {
+    height: 330px; }
+
+  .bulle-bloc {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: space-evenly;
+    height: 110px; }
+    .bulle-bloc_1 {
+      width: 45%; }
+
+  .bulle-bloc1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+
+  .bulle-menu {
+    width: 30%;
+    margin-left: 0px;
+    transform: trasform 0 2s;
+    animation: slide 2s forwards; }
+    .bulle-menu_nom {
+      margin-left: 15px; }
+    .bulle-menu_accompagnement {
+      width: 75%;
+      margin-top: 22px;
+      text-overflow: ellipsis; }
+    .bulle-menu_plats {
+      width: 100%; }
+
+  .bulle-menu1 {
+    margin-bottom: 30px;
+    width: 90%;
+    animation: slide 5s forwards; }
+
+  .nom-plats {
+    font-size: 25px;
+    margin-bottom: 40px; }
+
+  .btn-commander_bulle {
+    width: 50%;
+    margin-left: 25%; } }
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: normal; }
+@font-face {
+  font-family: 'Roboto';
+  src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: bold; }
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(/fonts/Shrikhand/Shrikhand-Regular.ttf);
+  font-weight: normal; }
+body {
+  font-family: Roboto;
+  font-weight: 100;
+  margin: 0px; }
+
+header {
+  font-family: Shrikhand;
+  width: 100%;
+  text-align: center; }
+
+h1 {
+  font-size: 1.7rem;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.titre_header {
+  box-shadow: 0 0 21px #0000002e; }
+
+.positionpage1- {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eaeaeaea;
+  cursor: pointer; }
+
+.reservation-restaurant {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 100%; }
+  .reservation-restaurant_titre--h2 {
+    margin-top: 0px;
+    font-family: roboto;
+    width: 80%;
+    margin-left: 12%; }
+  .reservation-restaurant_titre--h3 {
+    font-size: medium;
+    font-weight: 300;
+    width: 90%;
+    margin-left: 5%; }
+
+.position {
+  margin-right: 10px;
+  cursor: pointer; }
+
+.btn-explorer {
+  width: 100%;
+  cursor: pointer; }
+  .btn-explorer_texte {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #e16fda;
+    background: -moz-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    background: -webkit-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+    box-shadow: 0 0 21px #0000002e;
+    color: white; }
+    .btn-explorer_texte:hover {
+      background-color: white; }
+
+.titre-section {
+  margin-left: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 20px; }
+
+.btn-fonctionnement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .btn-fonctionnement :hover {
+    transform: scale(1.05);
+    transition-duration: 800ms; }
+  .btn-fonctionnement_element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+    font-size: small;
+    box-shadow: 0 0 21px #0000002e; }
+    .btn-fonctionnement_element--nombre {
+      border: transparent;
+      background-color: #9356dc;
+      color: white;
+      border-radius: 52px;
+      width: 1.3rem;
+      height: 18px;
+      position: absolute;
+      padding-top: 3px;
+      top: 12px;
+      left: -12px; }
+    .btn-fonctionnement_element--icone {
+      font-size: large;
+      margin-left: 10px; }
+    .btn-fonctionnement_element--modifier {
+      margin-left: 20px;
+      font-size: 0.9rem; }
+
+h5 {
+  font-size: large;
+  margin-top: -3px;
+  margin-left: 15px;
+  margin-bottom: 5px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.btn-restaurants {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 15px;
+  padding-bottom: 50px; }
+  .btn-restaurants_case {
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 0 21px #0000002e;
+    border-radius: 15px; }
+    .btn-restaurants_case--img {
+      width: 100%;
+      position: relative;
+      height: 11rem;
+      border-radius: 15px 15px 0px 0px;
+      object-fit: cover; }
+    .btn-restaurants_case--btn {
+      position: absolute;
+      background-color: #99e2d0;
+      color: #1c9879;
+      top: 12px;
+      right: 12px;
+      width: 25%;
+      text-align: center;
+      padding-top: 5px;
+      border-bottom-width: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+      font-weight: bold;
+      font-size: 14px; }
+    .btn-restaurants_case--heart {
+      position: absolute;
+      bottom: 33px;
+      right: 33px;
+      font-size: 23px;
+      font-weight: 100; }
+    .btn-restaurants_case--fig {
+      width: 100%;
+      border-radius: 0px 0px 15px 15px;
+      background-color: #FFFF;
+      margin-top: -5px;
+      margin-bottom: 5px;
+      padding-top: 15px;
+      padding-bottom: 5px; }
+    .btn-restaurants_case--menu {
+      margin-top: 0px;
+      margin-left: 15px; }
+
+.footer-page {
+  color: #FFFF;
+  background-color: #353535;
+  padding-bottom: 20px; }
+  .footer-page_titre {
+    font-family: Shrikhand;
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 10px; }
+  .footer-page--ul {
+    list-style: none;
+    margin-left: 15px;
+    padding-left: 0px; }
+  .footer-page--icone {
+    padding-right: 10px; }
+  .footer-page li {
+    cursor: pointer;
+    margin-bottom: 5px; }
+
+@media screen and (max-width: 1400px) and (min-width: 760px) {
+  .titre_header {
+    position: relative; }
+
+  .positionpage1- {
+    position: absolute;
+    top: 10px;
+    width: 20%;
+    right: 10px;
+    border-radius: 16px; }
+    .positionpage1- :hover {
+      transform: scale(1.05);
+      transition-duration: 800ms; }
+
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .btn-fonctionnement_element {
+    margin-top: 20px; }
+
+  .reservation-restaurant_titre--h2 {
+    padding-top: 20px; }
+
+  .btn-restaurants {
+    width: 90%;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-bottom: 15px; }
+
+  .titre-section {
+    text-align: center; } }
+@media screen and (min-width: 610px) {
+  .btn-explorer_texte {
+    width: 50%;
+    margin-left: 27%; }
+
+  .btn-fonctionnement {
+    flex-direction: initial;
+    justify-content: space-around; }
+    .btn-fonctionnement_element {
+      width: 25%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 35px; }
+      .btn-fonctionnement_element--modifier {
+        text-align: start; }
+      .btn-fonctionnement_element--nombre {
+        top: -11px;
+        left: 45%; }
+
+  .btn-restaurants_case1,
+  .btn-restaurants_case2 {
+    display: flex; }
+
+  .btn-restaurants_case--fig {
+    margin-bottom: 0px; }
+
+  .footer-page_titre {
+    text-align: center; }
+  .footer-page--ul {
+    display: flex;
+    justify-content: center; }
+  .footer-page--icone {
+    padding-right: 5px; }
+
+  li {
+    margin-right: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

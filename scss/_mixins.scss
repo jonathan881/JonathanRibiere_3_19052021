@@ -1,0 +1,52 @@
+@mixin Bulle-shadow {
+  box-shadow: 0 0 21px #0000002e;
+}
+@mixin Bg-heade {
+  background: rgb(246, 246, 246);
+  background: linear-gradient(
+    177deg,
+    rgba(246, 246, 246, 1) 0%,
+    rgba(246, 246, 246, 1) 31%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(231, 241, 240, 1) 100%
+  );
+}
+
+@mixin color-pink {
+  background: #e16fda;
+  background: -moz-linear-gradient(
+    -45deg,
+    #e16fda 0%,
+    #c666db 29%,
+    #a25bdc 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #e16fda 0%,
+    #c666db 29%,
+    #a25bdc 100%
+  );
+  background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
+}
+@mixin Bulle-pink {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  @include color-pink;
+  @include Bulle-shadow;
+  color: white;
+  &:hover{
+    background-color: lighten(#e16fda, +50%);
+  }
+}
+
+@mixin hover-index {
+  transform: scale(1.05);
+  transition-duration: 800ms;
+}
