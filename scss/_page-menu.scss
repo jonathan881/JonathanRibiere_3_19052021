@@ -84,21 +84,21 @@ body {
   .titre-page {
     @include Bg-heade;
   }
-
+  
   .img-menu {
     height: 330px;
   }
   .bulle-bloc1 {
     @include bulle-bloc;
-    animation: slide 1s forwards;
+    animation: slide 2s forwards;
   }
   .bulle-bloc2 {
     @include bulle-bloc;
-    animation: slide 2s forwards;
+    animation: slide 3s forwards;
   }
   .bulle-bloc3 {
     @include bulle-bloc;
-    animation: slide 3s forwards;
+    animation: slide 4s forwards;
   }
   .bulle-bloc-a {
     display: flex;

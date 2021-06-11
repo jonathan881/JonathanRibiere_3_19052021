@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
   font-weight: normal; }
 @font-face {
-  font-family: 'Roboto';
-  src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: bold; }
 @font-face {
-  font-family: 'Shrikhand';
-  src: url(/fonts/Shrikhand/Shrikhand-Regular.ttf);
+  font-family: "Shrikhand";
+  src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
   font-weight: normal; }
 @keyframes slide {
   0% {
@@ -218,7 +218,7 @@ body {
     margin-left: 0px;
     justify-content: space-evenly;
     height: 110px;
-    animation: slide 1s forwards; }
+    animation: slide 2s forwards; }
     .bulle-bloc1_1 {
       width: 45%; }
 
@@ -228,7 +228,7 @@ body {
     margin-left: 0px;
     justify-content: space-evenly;
     height: 110px;
-    animation: slide 2s forwards; }
+    animation: slide 3s forwards; }
     .bulle-bloc2_1 {
       width: 45%; }
 
@@ -238,7 +238,7 @@ body {
     margin-left: 0px;
     justify-content: space-evenly;
     height: 110px;
-    animation: slide 3s forwards; }
+    animation: slide 4s forwards; }
     .bulle-bloc3_1 {
       width: 45%; }
 
@@ -272,16 +272,16 @@ body {
     width: 50%;
     margin-left: 25%; } }
 @font-face {
-  font-family: 'Roboto';
-  src: url(/fonts/Roboto/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
   font-weight: normal; }
 @font-face {
-  font-family: 'Roboto';
-  src: url(/fonts/Roboto/Roboto-Bold.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: bold; }
 @font-face {
-  font-family: 'Shrikhand';
-  src: url(/fonts/Shrikhand/Shrikhand-Regular.ttf);
+  font-family: "Shrikhand";
+  src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
   font-weight: normal; }
 body {
   font-family: Roboto;
