@@ -12,7 +12,6 @@
     rgba(231, 241, 240, 1) 100%
   );
 }
-
 @mixin color-pink {
   background: #e16fda;
   background: -moz-linear-gradient(
@@ -41,12 +40,279 @@
   @include color-pink;
   @include Bulle-shadow;
   color: white;
-  &:hover{
-    background-color: lighten(#e16fda, +50%);
-  }
 }
-
 @mixin hover-index {
   transform: scale(1.05);
   transition-duration: 800ms;
+}
+@mixin bloc-head {
+  display: flex;
+  width: 100%;
+  &_h2 {
+    margin-left: 5%;
+    padding-top: 30px;
+    font-family: Shrikhand;
+    width: 68%;
+    letter-spacing: 0.07rem;
+  }
+  &_icone {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+    font-size: 29px;
+    &--heart {
+      &:hover {
+        animation: fill 0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(
+          to left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
+        background: -webkit-linear-gradient(
+          to left,
+          #9356dc,
+          #b35cdc,
+          #cf64dc,
+          #e86edb,
+          #ff79da
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@mixin btn-fonctionement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  :hover {
+    @include hover-index;
+  }
+  &_element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+    font-size: small;
+    @include Bulle-shadow;
+    &--nombre {
+      border: transparent;
+      background-color: #9356dc;
+      color: white;
+      border-radius: 52px;
+      width: 1.3rem;
+      height: 18px;
+      position: absolute;
+      padding-top: 3px;
+      top: 12px;
+      left: -12px;
+    }
+    &--icone {
+      font-size: large;
+      margin-left: 10px;
+    }
+    &--modifier {
+      margin-left: 20px;
+      font-size: 0.9rem;
+    }
+  }
+}
+@mixin bulle-bloc {
+  display: flex;
+  width: 100%;
+  margin-left: 0px;
+  justify-content: space-evenly;
+  height: 110px;
+  &_1 {
+    width: 45%;
+  }
+}
+@mixin bulle-restaurants {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  &_case {
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    @include Bulle-shadow;
+    border-radius: 15px;
+    &--img {
+      width: 100%;
+      position: relative;
+      height: 11rem;
+      border-radius: 15px 15px 0px 0px;
+      object-fit: cover;
+    }
+    &--btn {
+      position: absolute;
+      background-color: #99e2d0;
+      color: #1c9879;
+      top: 12px;
+      right: 12px;
+      width: 25%;
+      text-align: center;
+      padding-top: 5px;
+      border-bottom-width: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px;
+      padding-left: 2px;
+      padding-right: 2px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    &--heart {
+      position: absolute;
+      bottom: 33px;
+      right: 33px;
+      font-size: 23px;
+      font-weight: 100;
+      cursor: pointer;
+    }
+    &--fig {
+      width: 100%;
+      border-radius: 0px 0px 15px 15px;
+      background-color: $color-withe;
+      margin-top: -5px;
+      margin-bottom: 5px;
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+    &--menu {
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+  }
+}
+@mixin bulle-menu {
+  border: solid transparent;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  @include Bulle-shadow;
+  &_global {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  &_plats {
+    width: 80%;
+  }
+  &_prix {
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 10px;
+    right: 3px;
+    font-weight: bold;
+  }
+  &_nom {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  &_accompagnement {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  &_cross {
+    display: flex;
+    &--check {
+      width: 100%;
+      text-align: center;
+      background-color: green;
+      display: flex;
+      align-items: center;
+      &:hover {
+        animation: rotat360 3s;
+      }
+    }
+    &:hover {
+      background-color: yellow;
+      width: 20%;
+      display: flex;
+      align-items: center;
+      border-radius: 0px 15px 15px 0px;
+    }
+  }
+}
+@mixin bulle-menu1 {
+  width: 30%;
+  margin-left: 0px;
+  transform: trasform 0 2s;
+
+  &_nom {
+    margin-left: 15px;
+  }
+  &_accompagnement {
+    width: 75%;
+    margin-top: 22px;
+    text-overflow: ellipsis;
+  }
+  &_plats {
+    width: 100%;
+  }
+}
+@mixin footer {
+  color: $color-withe;
+  background-color: #353535;
+  padding-bottom: 20px;
+  &_titre {
+    font-family: Shrikhand;
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  &--ul {
+    list-style: none;
+    margin-left: 15px;
+    padding-left: 0px;
+  }
+  &--icone {
+    padding-right: 10px;
+  }
+  li {
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
 }

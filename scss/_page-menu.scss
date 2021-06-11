@@ -2,7 +2,6 @@
 @import "./variables";
 @import "./mixins";
 @import "./keyframes";
-
 body {
   margin: 0px;
 }
@@ -19,7 +18,6 @@ body {
     width: 10%;
   }
 }
-
 .img-menu {
   object-fit: cover;
   width: 100%;
@@ -31,24 +29,22 @@ body {
   font-size: 1.6rem;
 }
 .bloc-head {
-  display: flex;
-  width: 100%;
-  &_h2 {
-    margin-left: 5%;
-    padding-top: 30px;
-    font-family: Shrikhand;
-    width: 68%;
-    letter-spacing: 0.07rem;
-  }
-  &_icone {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    padding-top: 23px;
-    font-size: 29px;
+  @include bloc-head;
+  .bloc-head_icone {
+    justify-content: flex-end;
+    cursor: pointer;
   }
 }
-
+.bulle-bloc1 {
+  transition: 1s ease-in-out;
+  animation: slide1 1s forwards;
+}
+.bulle-bloc2 {
+  animation: slide1 2s forwards;
+}
+.bulle-bloc3 {
+  animation: slide1 3s forwards;
+}
 .bloc-global {
   width: 100%;
   border-radius: 35px 35px 0px 0px;
@@ -70,52 +66,7 @@ body {
 }
 .bulle-menu,
 .bulle-menu1 {
-  border: solid transparent;
-  border-radius: 15px;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 10px;
-  background-color: white;
-  cursor: pointer;
-  animation: slide1 5s forwards;
-  @include Bulle-shadow;
-  &_global {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-  }
-  &_plats {
-    width: 80%;
-  }
-  &_prix {
-    position: absolute;
-    width: 20%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    bottom: 10px;
-    right: 3px;
-    font-weight: bold;
-  }
-  &_nom {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: large;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  &_accompagnement {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
+  @include bulle-menu;
 }
 .btn-commander {
   width: 90%;
@@ -127,58 +78,39 @@ body {
   &_bulle {
     @include Bulle-pink;
     @include Bulle-shadow;
-    &::hover {
-      background-color: lighten(#e16fda, 90%);
-    }
   }
 }
-
 @media screen and (min-width: 610px) {
   .titre-page {
     @include Bg-heade;
   }
-  .bloc-head_icone {
-    justify-content: flex-end;
-  }
+  
   .img-menu {
     height: 330px;
   }
-  .bulle-bloc {
-    display: flex;
-    width: 100%;
-    margin-left: 0px;
-    justify-content: space-evenly;
-    height: 110px;
-    &_1 {
-      width: 45%;
-    }
-  }
   .bulle-bloc1 {
+    @include bulle-bloc;
+    animation: slide 1s forwards;
+  }
+  .bulle-bloc2 {
+    @include bulle-bloc;
+    animation: slide 2s forwards;
+  }
+  .bulle-bloc3 {
+    @include bulle-bloc;
+    animation: slide 3s forwards;
+  }
+  .bulle-bloc-a {
     display: flex;
     justify-content: space-around;
     width: 100%;
   }
   .bulle-menu {
-    width: 30%;
-    margin-left: 0px;
-    transform: trasform 0 2s;
-    animation: slide 2s forwards;
-    &_nom {
-      margin-left: 15px;
-    }
-    &_accompagnement {
-      width: 75%;
-      margin-top: 22px;
-      text-overflow: ellipsis;
-    }
-    &_plats {
-      width: 100%;
-    }
+    @include bulle-menu1;
   }
   .bulle-menu1 {
     margin-bottom: 30px;
     width: 90%;
-    animation: slide 5s forwards;
   }
   .nom-plats {
     font-size: 25px;
