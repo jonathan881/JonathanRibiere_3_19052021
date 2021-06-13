@@ -36,7 +36,6 @@ body {
   }
 }
 .bulle-bloc1 {
-  transition: 1s ease-in-out;
   animation: slide1 1s forwards;
 }
 .bulle-bloc2 {
@@ -81,43 +80,18 @@ body {
   }
 }
 @media screen and (min-width: 610px) {
-  .titre-page {
-    @include Bg-heade;
+  .img-menu{
+    height: 310px;
   }
-  
-  .img-menu {
-    height: 330px;
+  .nom-plats{
+    font-size: 1.3rem;
   }
-  .bulle-bloc1 {
-    @include bulle-bloc;
-    animation: slide 2s forwards;
-  }
-  .bulle-bloc2 {
-    @include bulle-bloc;
-    animation: slide 3s forwards;
-  }
-  .bulle-bloc3 {
-    @include bulle-bloc;
-    animation: slide 4s forwards;
-  }
-  .bulle-bloc-a {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .bulle-menu {
-    @include bulle-menu1;
-  }
-  .bulle-menu1 {
-    margin-bottom: 30px;
-    width: 90%;
-  }
-  .nom-plats {
-    font-size: 25px;
-    margin-bottom: 40px;
+  .bulle-bloc1, .bulle-bloc2, .bulle-bloc3 {
+    width: 70%;
+    margin-left: 15%;
   }
   .btn-commander_bulle {
-    width: 50%;
-    margin-left: 25%;
+    margin-top: 70px;
   }
+ 
 }

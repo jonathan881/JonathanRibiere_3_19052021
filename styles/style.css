@@ -84,7 +84,6 @@ body {
     cursor: pointer; }
 
 .bulle-bloc1 {
-  transition: 1s ease-in-out;
   animation: slide1 1s forwards; }
 
 .bulle-bloc2 {
@@ -218,72 +217,18 @@ body {
     box-shadow: 4px 4px 6px #aaa; }
 
 @media screen and (min-width: 610px) {
-  .titre-page {
-    background: #f6f6f6;
-    background: linear-gradient(177deg, #f6f6f6 0%, #f6f6f6 31%, white 50%, white 70%, #e7f1f0 100%); }
-
   .img-menu {
-    height: 330px; }
-
-  .bulle-bloc1 {
-    display: flex;
-    width: 100%;
-    margin-left: 0px;
-    justify-content: space-evenly;
-    height: 110px;
-    animation: slide 2s forwards; }
-    .bulle-bloc1_1 {
-      width: 45%; }
-
-  .bulle-bloc2 {
-    display: flex;
-    width: 100%;
-    margin-left: 0px;
-    justify-content: space-evenly;
-    height: 110px;
-    animation: slide 3s forwards; }
-    .bulle-bloc2_1 {
-      width: 45%; }
-
-  .bulle-bloc3 {
-    display: flex;
-    width: 100%;
-    margin-left: 0px;
-    justify-content: space-evenly;
-    height: 110px;
-    animation: slide 4s forwards; }
-    .bulle-bloc3_1 {
-      width: 45%; }
-
-  .bulle-bloc-a {
-    display: flex;
-    justify-content: space-around;
-    width: 100%; }
-
-  .bulle-menu {
-    width: 30%;
-    margin-left: 0px;
-    transform: trasform 0 2s; }
-    .bulle-menu_nom {
-      margin-left: 15px; }
-    .bulle-menu_accompagnement {
-      width: 75%;
-      margin-top: 22px;
-      text-overflow: ellipsis; }
-    .bulle-menu_plats {
-      width: 100%; }
-
-  .bulle-menu1 {
-    margin-bottom: 30px;
-    width: 90%; }
+    height: 310px; }
 
   .nom-plats {
-    font-size: 25px;
-    margin-bottom: 40px; }
+    font-size: 1.3rem; }
+
+  .bulle-bloc1, .bulle-bloc2, .bulle-bloc3 {
+    width: 70%;
+    margin-left: 15%; }
 
   .btn-commander_bulle {
-    width: 50%;
-    margin-left: 25%; } }
+    margin-top: 70px; } }
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -306,14 +251,14 @@ header {
   width: 100%;
   text-align: center; }
 
+.titre-page {
+  box-shadow: 4px 4px 6px #aaa; }
+
 h1 {
   font-size: 1.7rem;
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 10px; }
-
-.titre_header {
-  box-shadow: 4px 4px 6px #aaa; }
 
 .positionpage1- {
   width: 100%;
@@ -322,7 +267,8 @@ h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #eaeaeaea;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 4px 4px 6px #aaa; }
 
 .reservation-restaurant {
   background-color: #f6f6f6;
@@ -497,9 +443,6 @@ a {
     margin-bottom: 5px; }
 
 @media screen and (max-width: 1400px) and (min-width: 760px) {
-  .titre_header {
-    position: relative; }
-
   .positionpage1- {
     position: absolute;
     top: 10px;
@@ -529,6 +472,12 @@ a {
   .titre-section {
     text-align: center; } }
 @media screen and (min-width: 610px) {
+  .titre-page {
+    box-shadow: 4px 4px 6px #aaa; }
+
+  .reservation-restaurant_titre--h2 {
+    padding-top: 20px; }
+
   .btn-explorer_texte {
     width: 50%;
     margin-left: 27%; }
