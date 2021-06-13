@@ -114,15 +114,27 @@ body {
 
 .bulle-menu,
 .bulle-menu1 {
-  border: solid transparent;
+  background-color: #fff;
   border-radius: 15px;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 10px;
-  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
   cursor: pointer;
-  display: flex;
-  box-shadow: 0 0 21px #0000002e; }
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out; }
+  .bulle-menu:hover,
+  .bulle-menu1:hover {
+    padding-right: 75px; }
+  .bulle-menu:hover .bulle-menu_cross,
+  .bulle-menu1:hover .bulle-menu_cross {
+    opacity: 1;
+    transform: translate(-50px); }
+  .bulle-menu:hover .fa-check-circle,
+  .bulle-menu1:hover .fa-check-circle {
+    transform: rotate(360deg); }
   .bulle-menu_global,
   .bulle-menu1_global {
     display: flex;
@@ -162,24 +174,25 @@ body {
     margin-bottom: 10px; }
   .bulle-menu_cross,
   .bulle-menu1_cross {
-    display: flex; }
-    .bulle-menu_cross--check,
-    .bulle-menu1_cross--check {
-      width: 100%;
-      text-align: center;
-      background-color: green;
-      display: flex;
-      align-items: center; }
-      .bulle-menu_cross--check:hover,
-      .bulle-menu1_cross--check:hover {
-        animation: rotat360 3s; }
-    .bulle-menu_cross:hover,
-    .bulle-menu1_cross:hover {
-      background-color: yellow;
-      width: 20%;
-      display: flex;
-      align-items: center;
-      border-radius: 0px 15px 15px 0px; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0px;
+    opacity: 0;
+    transition: transform 330ms ease-in-out; }
+    .bulle-menu_cross .fa-check-circle,
+    .bulle-menu1_cross .fa-check-circle {
+      color: #fff;
+      transition: transform 500ms ease-in-out; }
 
 .btn-commander {
   width: 90%;
@@ -200,9 +213,9 @@ body {
     background: -moz-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
     background: -webkit-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
     background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
-    box-shadow: 0 0 21px #0000002e;
+    box-shadow: 4px 4px 6px #aaa;
     color: white;
-    box-shadow: 0 0 21px #0000002e; }
+    box-shadow: 4px 4px 6px #aaa; }
 
 @media screen and (min-width: 610px) {
   .titre-page {
@@ -300,7 +313,7 @@ h1 {
   padding-bottom: 10px; }
 
 .titre_header {
-  box-shadow: 0 0 21px #0000002e; }
+  box-shadow: 4px 4px 6px #aaa; }
 
 .positionpage1- {
   width: 100%;
@@ -347,7 +360,7 @@ h1 {
     background: -moz-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
     background: -webkit-linear-gradient(-45deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
     background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
-    box-shadow: 0 0 21px #0000002e;
+    box-shadow: 4px 4px 6px #aaa;
     color: white; }
 
 .titre-section {
@@ -380,7 +393,7 @@ h1 {
     margin-bottom: 15px;
     background-color: #f6f6f6;
     font-size: small;
-    box-shadow: 0 0 21px #0000002e; }
+    box-shadow: 4px 4px 6px #aaa; }
     .btn-fonctionnement_element--nombre {
       border: transparent;
       background-color: #9356dc;
@@ -419,7 +432,7 @@ a {
     position: relative;
     margin-left: 5%;
     margin-right: 5%;
-    box-shadow: 0 0 21px #0000002e;
+    box-shadow: 4px 4px 6px #aaa;
     border-radius: 15px; }
     .btn-restaurants_case--img {
       width: 100%;

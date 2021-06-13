@@ -1,5 +1,5 @@
 @mixin Bulle-shadow {
-  box-shadow: 0 0 21px #0000002e;
+  box-shadow: 4px 4px 6px #aaa;
 }
 @mixin Bg-heade {
   background: rgb(246, 246, 246);
@@ -207,15 +207,27 @@
   }
 }
 @mixin bulle-menu {
-  border: solid transparent;
+  background-color: #fff;
   border-radius: 15px;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 10px;
-  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 4px 4px 6px #aaa;
+  position: relative;
   cursor: pointer;
-  display: flex;
-  @include Bulle-shadow;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
+  &:hover {
+    padding-right: 75px;
+  }
+  &:hover .bulle-menu_cross {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
   &_global {
     display: flex;
     justify-content: space-between;
@@ -255,25 +267,27 @@
   }
   &_cross {
     display: flex;
-    &--check {
-      width: 100%;
-      text-align: center;
-      background-color: green;
-      display: flex;
-      align-items: center;
-      &:hover {
-        animation: rotat360 3s;
-      }
-    }
-    &:hover {
-      background-color: yellow;
-      width: 20%;
-      display: flex;
-      align-items: center;
-      border-radius: 0px 15px 15px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0px;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    & .fa-check-circle {
+      color: #fff;
+      transition: transform 500ms ease-in-out;
     }
   }
 }
+
 @mixin bulle-menu1 {
   width: 30%;
   margin-left: 0px;
