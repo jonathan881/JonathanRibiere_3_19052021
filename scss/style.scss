@@ -69,6 +69,7 @@ h1 {
   width: 100%;
   &_titre--h2 {
     margin-top: 0px;
+    padding-top: 20px;
     font-family: roboto;
     width: 80%;
     margin-left: 12%;
@@ -114,6 +115,9 @@ a {
 }
 .footer-page {
   @include footer;
+  a{
+    color: #f6f6f6;
+  }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 760px) {
@@ -152,9 +156,6 @@ a {
 @media screen and (min-width: 610px) {
   .titre-page{
     @include Bulle-shadow;
-  }
-  .reservation-restaurant_titre--h2{
-    padding-top: 20px;
   }
   .btn-explorer_texte {
     width: 50%;
@@ -199,8 +200,5 @@ a {
 
   li {
     margin-right: 15px;
-    a{
-      color: #f6f6f6;
-    }
   }
 }
