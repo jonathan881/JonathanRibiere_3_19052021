@@ -3,7 +3,8 @@
 @import "./mixins";
 @import "./keyframes";
 body {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 .titre-page {
   &_rtn {
@@ -95,3 +96,4 @@ body {
   }
  
 }
+

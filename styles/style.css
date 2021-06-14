@@ -33,8 +33,14 @@
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5); }
+  100% {
+    transform: scaleY(1); } }
 body {
-  margin: 0px; }
+  margin: 0;
+  padding: 0; }
 
 .titre-page_rtn {
   display: flex;
@@ -244,7 +250,29 @@ body {
 body {
   font-family: Roboto;
   font-weight: 100;
-  margin: 0px; }
+  margin: 0;
+  padding: 0; }
+
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  display: flex;
+  justify-content: space-evenly; }
+  .load__bar {
+    background-color: #15DEA5;
+    height: 100%;
+    width: 3vh;
+    animation: bars 1000ms; }
+    .load__bar--1 {
+      animation-delay: 200ms; }
+    .load__bar--2 {
+      animation-delay: 400ms; }
+    .load__bar--3 {
+      animation-delay: 600ms; }
+    .load__bar--4 {
+      animation-delay: 800ms; }
+    .load__bar--5 {
+      animation-delay: 1000ms; }
 
 header {
   font-family: Shrikhand;

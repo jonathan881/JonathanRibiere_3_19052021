@@ -5,7 +5,25 @@
 body {
   font-family: Roboto;
   font-weight: 100;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+}
+.load {
+  width: $size*10;
+  height: $size*7.5;
+  display: flex;
+  justify-content: space-evenly;
+  &__bar {
+      background-color: #15DEA5;
+      height: 100%;
+      width: $size;
+      animation: bars $anim-dur;
+      @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+         }
+    }
+  }
 }
 header {
   font-family: Shrikhand;
@@ -85,6 +103,7 @@ a {
 .footer-page {
   @include footer;
 }
+
 @media screen and (max-width: 1400px) and (min-width: 760px) {
  
   
