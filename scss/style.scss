@@ -8,21 +8,33 @@ body {
   margin: 0;
   padding: 0;
 }
+.container{
+  display: none;
+}
 .load {
   width: $size*10;
   height: $size*7.5;
   display: flex;
   justify-content: space-evenly;
   &__bar {
-      background-color: #15DEA5;
+      background-color: $cd-bars;
       height: 100%;
       width: $size;
-      animation: bars $anim-dur;
-      @for $i from 1 through $num-bars {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-         }
-    }
+      animation: bars $anim-dur backwards infinite ease-in-out alternate;
+      @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+             &--#{$i}-inv {
+              animation-delay: $anim-delay * $i + random(100)*15ms;
+              animation-direction: alternate-reverse;
+              animation-fill-mode: forwards;
+              background-color: $cd-bars-inv;
+              &:hover {
+                animation-play-state: paused;
+            }
+          }
+        }
   }
 }
 header {
