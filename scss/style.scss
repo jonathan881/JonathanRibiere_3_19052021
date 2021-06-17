@@ -8,33 +8,33 @@ body {
   margin: 0;
   padding: 0;
 }
-.container{
+.container {
   display: none;
 }
 .load {
-  width: $size*10;
-  height: $size*7.5;
+  width: $size * 10;
+  height: $size * 7.5;
   display: flex;
   justify-content: space-evenly;
   &__bar {
-      background-color: $cd-bars;
-      height: 100%;
-      width: $size;
-      animation: bars $anim-dur backwards infinite ease-in-out alternate;
-      @for $i from 1 through 5 {
-            &--#{$i} {
-                animation-delay: $anim-delay * $i;
-             }
-             &--#{$i}-inv {
-              animation-delay: $anim-delay * $i + random(100)*15ms;
-              animation-direction: alternate-reverse;
-              animation-fill-mode: forwards;
-              background-color: $cd-bars-inv;
-              &:hover {
-                animation-play-state: paused;
-            }
-          }
+    background-color: $cd-bars;
+    height: 100%;
+    width: $size;
+    animation: bars $anim-dur backwards infinite ease-in-out alternate;
+    @for $i from 1 through 5 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+      &--#{$i}-inv {
+        animation-delay: $anim-delay * $i + random(100) * 15ms;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+        background-color: $cd-bars-inv;
+        &:hover {
+          animation-play-state: paused;
         }
+      }
+    }
   }
 }
 header {
@@ -115,14 +115,12 @@ a {
 }
 .footer-page {
   @include footer;
-  a{
+  a {
     color: #f6f6f6;
   }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 760px) {
- 
-  
   .positionpage1- {
     position: absolute;
     top: 10px;
@@ -154,7 +152,7 @@ a {
   }
 }
 @media screen and (min-width: 610px) {
-  .titre-page{
+  .titre-page {
     @include Bulle-shadow;
   }
   .btn-explorer_texte {

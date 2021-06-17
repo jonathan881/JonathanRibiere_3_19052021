@@ -227,15 +227,19 @@ body {
   .nom-plats {
     font-size: 1.3rem; }
 
-  .bulle-bloc1, .bulle-bloc2, .bulle-bloc3 {
+  .bulle-bloc1,
+  .bulle-bloc2,
+  .bulle-bloc3 {
     width: 70%;
     margin-left: 15%; }
 
-  .bulle-menu_prix, .bulle-menu_prix {
+  .bulle-menu_prix,
+  .bulle-menu_prix {
     width: 25%;
     right: 10px; }
 
-  .bulle-menu_cross, .bulle-menu1_cross {
+  .bulle-menu_cross,
+  .bulle-menu1_cross {
     width: 50px;
     height: 55px; }
 
@@ -268,53 +272,53 @@ body {
   display: flex;
   justify-content: space-evenly; }
   .load__bar {
-    background-color: #15DEA5;
+    background-color: #15dea5;
     height: 100%;
     width: 3vh;
     animation: bars 1000ms backwards infinite ease-in-out alternate; }
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 650ms;
+      animation-delay: 545ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
-      background-color: #0E397F; }
+      background-color: #0e397f; }
       .load__bar--1-inv:hover {
         animation-play-state: paused; }
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 640ms;
+      animation-delay: 475ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
-      background-color: #0E397F; }
+      background-color: #0e397f; }
       .load__bar--2-inv:hover {
         animation-play-state: paused; }
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1335ms;
+      animation-delay: 1635ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
-      background-color: #0E397F; }
+      background-color: #0e397f; }
       .load__bar--3-inv:hover {
         animation-play-state: paused; }
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 1625ms;
+      animation-delay: 1955ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
-      background-color: #0E397F; }
+      background-color: #0e397f; }
       .load__bar--4-inv:hover {
         animation-play-state: paused; }
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1060ms;
+      animation-delay: 2470ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
-      background-color: #0E397F; }
+      background-color: #0e397f; }
       .load__bar--5-inv:hover {
         animation-play-state: paused; }
 
@@ -485,7 +489,7 @@ a {
     .btn-restaurants_case--fig {
       width: 100%;
       border-radius: 0px 0px 15px 15px;
-      background-color: #FFFF;
+      background-color: #ffff;
       margin-top: -5px;
       margin-bottom: 5px;
       padding-top: 15px;
@@ -495,7 +499,7 @@ a {
       margin-left: 15px; }
 
 .footer-page {
-  color: #FFFF;
+  color: #ffff;
   background-color: #353535;
   padding-bottom: 20px; }
   .footer-page_titre {

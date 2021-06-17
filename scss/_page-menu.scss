@@ -81,27 +81,29 @@ body {
   }
 }
 @media screen and (min-width: 610px) {
-  .img-menu{
+  .img-menu {
     height: 310px;
   }
-  .nom-plats{
+  .nom-plats {
     font-size: 1.3rem;
   }
-  .bulle-bloc1, .bulle-bloc2, .bulle-bloc3 {
+  .bulle-bloc1,
+  .bulle-bloc2,
+  .bulle-bloc3 {
     width: 70%;
     margin-left: 15%;
   }
-  .bulle-menu_prix, .bulle-menu_prix{
+  .bulle-menu_prix,
+  .bulle-menu_prix {
     width: 25%;
     right: 10px;
   }
-  .bulle-menu_cross, .bulle-menu1_cross {
+  .bulle-menu_cross,
+  .bulle-menu1_cross {
     width: 50px;
     height: 55px;
   }
   .btn-commander_bulle {
     margin-top: 70px;
   }
- 
 }
-
