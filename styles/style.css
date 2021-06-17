@@ -232,10 +232,12 @@ body {
     margin-left: 15%; }
 
   .bulle-menu_prix, .bulle-menu_prix {
-    right: 3px; }
+    width: 25%;
+    right: 10px; }
 
   .bulle-menu_cross, .bulle-menu1_cross {
-    width: 50px; }
+    width: 50px;
+    height: 55px; }
 
   .btn-commander_bulle {
     margin-top: 70px; } }
@@ -273,7 +275,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 890ms;
+      animation-delay: 650ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0E397F; }
@@ -282,7 +284,7 @@ body {
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 1405ms;
+      animation-delay: 640ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0E397F; }
@@ -291,7 +293,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 2070ms;
+      animation-delay: 1335ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0E397F; }
@@ -300,7 +302,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 1445ms;
+      animation-delay: 1625ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0E397F; }
@@ -309,7 +311,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1210ms;
+      animation-delay: 1060ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0E397F; }
