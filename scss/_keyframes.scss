@@ -1,9 +1,11 @@
 @keyframes loader {
-  from {
-    display: block;
+  0% {
+    display: flex;
+    opacity: 1;
   }
-  to {
+  100% {
     display: none;
+    opacity: 0;
   }
 }
 @keyframes slide {

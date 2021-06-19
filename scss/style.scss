@@ -12,7 +12,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -20,8 +20,9 @@ body {
   z-index: 999;
   background-color: #e86edb;
   opacity: 1;
-  animation: loader 2s;
-  animation-iteration-count: 1;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-timing-function: 3s;
 }
 .load {
   width: $size * 10;
@@ -114,7 +115,17 @@ h1 {
 }
 .btn-fonctionnement {
   @include btn-fonctionement;
+  :hover {
+    background-color: #f5edff;
+  }
+
+  &_element--icone {   
+    :hover {
+      color: #9356dc;
+    }
+  }
 }
+
 h5 {
   font-size: large;
   margin-top: -3px;

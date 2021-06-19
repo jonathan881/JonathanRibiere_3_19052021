@@ -11,10 +11,12 @@
   src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf);
   font-weight: normal; }
 @keyframes loader {
-  from {
-    display: block; }
-  to {
-    display: none; } }
+  0% {
+    display: flex;
+    opacity: 1; }
+  100% {
+    display: none;
+    opacity: 0; } }
 @keyframes slide {
   0% {
     -webkit-transform: translateX(-400%);
@@ -188,7 +190,7 @@ body {
     width: 10px;
     height: 50px;
     font-size: 1.5rem;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: absolute;
@@ -272,7 +274,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -280,8 +282,9 @@ body {
   z-index: 999;
   background-color: #e86edb;
   opacity: 1;
-  animation: loader 2s;
-  animation-iteration-count: 1; }
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-timing-function: 3s; }
 
 .load {
   width: 30vh;
@@ -296,7 +299,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 1535ms;
+      animation-delay: 365ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -314,7 +317,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 645ms;
+      animation-delay: 900ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -323,7 +326,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 2270ms;
+      animation-delay: 1400ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -332,7 +335,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1735ms;
+      animation-delay: 2050ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -453,6 +456,10 @@ h1 {
     .btn-fonctionnement_element--modifier {
       margin-left: 20px;
       font-size: 0.9rem; }
+  .btn-fonctionnement :hover {
+    background-color: #f5edff; }
+  .btn-fonctionnement_element--icone :hover {
+    color: #9356dc; }
 
 h5 {
   font-size: large;
