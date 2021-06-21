@@ -10,20 +10,22 @@ body {
 }
 .container {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
-  z-index: 999;
-  background-color: #e86edb;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 3s forwards;
+  background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
   opacity: 1;
-  animation-name: loader;
-  animation-duration: 3s;
-  animation-timing-function: 3s;
-}
+    }
 .load {
   width: $size * 10;
   height: $size * 7.5;
@@ -106,6 +108,9 @@ h1 {
   }
   &_texte {
     @include Bulle-pink;
+    :hover {
+      box-shadow: 4px 4px 6px #000;
+  }
   }
 }
 .titre-section {
@@ -120,6 +125,7 @@ h1 {
   }
 
   &_element--icone {   
+    color: grey;
     :hover {
       color: #9356dc;
     }
