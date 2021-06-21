@@ -41,6 +41,9 @@
   @include color-pink;
   @include Bulle-shadow;
   color: white;
+  &:hover {
+    box-shadow: 4px 4px 6px #000;
+  }
 }
 @mixin hover-index {
   transform: scale(1.05);

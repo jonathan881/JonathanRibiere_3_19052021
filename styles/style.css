@@ -233,6 +233,8 @@ body {
     box-shadow: 4px 4px 6px #aaa;
     color: white;
     box-shadow: 4px 4px 6px #aaa; }
+    .btn-commander_bulle:hover {
+      box-shadow: 4px 4px 6px #000; }
 
 @media screen and (min-width: 610px) {
   .img-menu {
@@ -309,7 +311,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 1430ms;
+      animation-delay: 1220ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -318,7 +320,7 @@ body {
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 625ms;
+      animation-delay: 580ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -327,7 +329,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1140ms;
+      animation-delay: 1800ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -336,7 +338,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 1805ms;
+      animation-delay: 1340ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -345,7 +347,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1480ms;
+      animation-delay: 1450ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
