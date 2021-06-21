@@ -72,8 +72,8 @@ body {
   width: 90%;
   margin-left: 5%;
   &:hover {
-    transform: scale(1.1);
     transition: 2s;
+    opacity: 0.9;
   }
   &_bulle {
     @include Bulle-pink;

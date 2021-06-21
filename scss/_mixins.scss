@@ -42,7 +42,7 @@
   @include Bulle-shadow;
   color: white;
   &:hover {
-    animation: bulle-pink 1.3s ease-in-out;
+    transition: 1.3s;
     box-shadow: 4px 4px 6px #000;
   }
 }
@@ -68,7 +68,7 @@
     font-size: 29px;
     &--heart {
       &:hover {
-        animation: heart 0.3s ease-in-out;
+        animation: heart 0.7s ease-in-out;
         display: inline-block;
         opacity: 1;
         background: linear-gradient(

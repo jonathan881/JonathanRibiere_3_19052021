@@ -96,7 +96,7 @@ body {
     padding-top: 23px;
     font-size: 29px; }
     .bloc-head_icone--heart:hover {
-      animation: heart 0.3s ease-in-out;
+      animation: heart 0.7s ease-in-out;
       display: inline-block;
       opacity: 1;
       background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -220,8 +220,8 @@ body {
   width: 90%;
   margin-left: 5%; }
   .btn-commander:hover {
-    transform: scale(1.1);
-    transition: 2s; }
+    transition: 2s;
+    opacity: 0.9; }
   .btn-commander_bulle {
     width: 70%;
     margin-left: 15%;
@@ -239,7 +239,7 @@ body {
     color: white;
     box-shadow: 4px 4px 6px #aaa; }
     .btn-commander_bulle:hover {
-      animation: bulle-pink 1.3s ease-in-out;
+      transition: 1.3s;
       box-shadow: 4px 4px 6px #000; }
 
 @media screen and (min-width: 610px) {
@@ -320,7 +320,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 1310ms;
+      animation-delay: 215ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -329,7 +329,7 @@ body {
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 1645ms;
+      animation-delay: 1615ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -338,7 +338,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1890ms;
+      animation-delay: 1425ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -347,7 +347,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 2000ms;
+      animation-delay: 1370ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -356,7 +356,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1495ms;
+      animation-delay: 1090ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -433,7 +433,7 @@ h1 {
     box-shadow: 4px 4px 6px #aaa;
     color: white; }
     .btn-explorer_texte:hover {
-      animation: bulle-pink 1.3s ease-in-out;
+      transition: 1.3s;
       box-shadow: 4px 4px 6px #000; }
 
 .titre-section {
