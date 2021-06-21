@@ -64,7 +64,7 @@
     font-size: 29px;
     &--heart {
       &:hover {
-        animation: fill 0.3s ease-in-out;
+        animation: heart 0.3s ease-in-out;
         display: inline-block;
         opacity: 1;
         background: linear-gradient(
@@ -186,6 +186,7 @@
     }
     &--heart {
       position: absolute;
+      animation: heart 0.3s ease-in-out;
       bottom: 33px;
       right: 33px;
       font-size: 23px;
@@ -269,7 +270,7 @@
     justify-content: center;
     align-items: center;
     width: 10px;
-    height: 50px;
+    height: 55px;
     font-size: 1.5rem;
     background-color: #99e2d0;
     border-top-right-radius: 15px;

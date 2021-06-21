@@ -45,6 +45,13 @@
     transform: scaleY(0.5); }
   100% {
     transform: scaleY(1); } }
+@keyframes heart {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 body {
   margin: 0;
   padding: 0; }
@@ -84,7 +91,7 @@ body {
     padding-top: 23px;
     font-size: 29px; }
     .bloc-head_icone--heart:hover {
-      animation: fill 0.3s ease-in-out;
+      animation: heart 0.3s ease-in-out;
       display: inline-block;
       opacity: 1;
       background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -188,7 +195,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 10px;
-    height: 50px;
+    height: 55px;
     font-size: 1.5rem;
     background-color: #99e2d0;
     border-top-right-radius: 15px;
@@ -292,6 +299,7 @@ body {
   width: 30vh;
   height: 22.5vh;
   display: flex;
+  margin: 20px 42px 20px 42px;
   justify-content: space-evenly; }
   .load__bar {
     background-color: #15dea5;
@@ -301,7 +309,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 1235ms;
+      animation-delay: 515ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -319,7 +327,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1455ms;
+      animation-delay: 1575ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -328,7 +336,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 2210ms;
+      animation-delay: 1475ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -337,12 +345,16 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 2050ms;
+      animation-delay: 2065ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
       .load__bar--5-inv:hover {
         animation-play-state: paused; }
+
+.texte-container {
+  margin: 50px;
+  text-align: center; }
 
 header {
   font-family: Shrikhand;
@@ -513,6 +525,7 @@ a {
       font-size: 14px; }
     .btn-restaurants_case--heart {
       position: absolute;
+      animation: heart 0.3s ease-in-out;
       bottom: 33px;
       right: 33px;
       font-size: 23px;
