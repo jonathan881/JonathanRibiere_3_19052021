@@ -42,6 +42,7 @@
   @include Bulle-shadow;
   color: white;
   &:hover {
+    animation: bulle-pink 1.3s ease-in-out;
     box-shadow: 4px 4px 6px #000;
   }
 }

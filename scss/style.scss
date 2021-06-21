@@ -30,7 +30,10 @@ body {
   width: $size * 10;
   height: $size * 7.5;
   display: flex;
-  margin: 20px 42px 20px 42px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+  margin-bottom: 2rem;
   justify-content: space-evenly;
   &__bar {
     background-color: $cd-bars;

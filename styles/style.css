@@ -52,6 +52,11 @@
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+@keyframes bulle-pink {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
 body {
   margin: 0;
   padding: 0; }
@@ -234,6 +239,7 @@ body {
     color: white;
     box-shadow: 4px 4px 6px #aaa; }
     .btn-commander_bulle:hover {
+      animation: bulle-pink 1.3s ease-in-out;
       box-shadow: 4px 4px 6px #000; }
 
 @media screen and (min-width: 610px) {
@@ -301,7 +307,10 @@ body {
   width: 30vh;
   height: 22.5vh;
   display: flex;
-  margin: 20px 42px 20px 42px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+  margin-bottom: 2rem;
   justify-content: space-evenly; }
   .load__bar {
     background-color: #15dea5;
@@ -311,7 +320,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 1220ms;
+      animation-delay: 1310ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -320,7 +329,7 @@ body {
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 580ms;
+      animation-delay: 1645ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -329,7 +338,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1800ms;
+      animation-delay: 1890ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -338,7 +347,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 1340ms;
+      animation-delay: 2000ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -347,7 +356,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 1450ms;
+      animation-delay: 1495ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -424,6 +433,7 @@ h1 {
     box-shadow: 4px 4px 6px #aaa;
     color: white; }
     .btn-explorer_texte:hover {
+      animation: bulle-pink 1.3s ease-in-out;
       box-shadow: 4px 4px 6px #000; }
 
 .titre-section {
