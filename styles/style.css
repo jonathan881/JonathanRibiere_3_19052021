@@ -309,7 +309,7 @@ body {
     .load__bar--1 {
       animation-delay: 200ms; }
     .load__bar--1-inv {
-      animation-delay: 515ms;
+      animation-delay: 1430ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -318,7 +318,7 @@ body {
     .load__bar--2 {
       animation-delay: 400ms; }
     .load__bar--2-inv {
-      animation-delay: 580ms;
+      animation-delay: 625ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -327,7 +327,7 @@ body {
     .load__bar--3 {
       animation-delay: 600ms; }
     .load__bar--3-inv {
-      animation-delay: 1575ms;
+      animation-delay: 1140ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -336,7 +336,7 @@ body {
     .load__bar--4 {
       animation-delay: 800ms; }
     .load__bar--4-inv {
-      animation-delay: 1475ms;
+      animation-delay: 1805ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -345,7 +345,7 @@ body {
     .load__bar--5 {
       animation-delay: 1000ms; }
     .load__bar--5-inv {
-      animation-delay: 2065ms;
+      animation-delay: 1480ms;
       animation-direction: alternate-reverse;
       animation-fill-mode: forwards;
       background-color: #0e397f; }
@@ -353,7 +353,7 @@ body {
         animation-play-state: paused; }
 
 .texte-container {
-  margin: 50px;
+  padding: 50px;
   text-align: center; }
 
 header {
@@ -421,7 +421,7 @@ h1 {
     background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
     box-shadow: 4px 4px 6px #aaa;
     color: white; }
-    .btn-explorer_texte :hover {
+    .btn-explorer_texte:hover {
       box-shadow: 4px 4px 6px #000; }
 
 .titre-section {
@@ -434,9 +434,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .btn-fonctionnement :hover {
-    transform: scale(1.05);
-    transition-duration: 800ms; }
   .btn-fonctionnement_element {
     display: flex;
     align-items: center;
@@ -472,12 +469,12 @@ h1 {
     .btn-fonctionnement_element--modifier {
       margin-left: 20px;
       font-size: 0.9rem; }
-  .btn-fonctionnement :hover {
+  .btn-fonctionnement_element:hover {
     background-color: #f5edff; }
   .btn-fonctionnement_element--icone {
     color: grey; }
-    .btn-fonctionnement_element--icone :hover {
-      color: #9356dc; }
+    .btn-fonctionnement_element--icone:hover {
+      color: #000; }
 
 h5 {
   font-size: large;

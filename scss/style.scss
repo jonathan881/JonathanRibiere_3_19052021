@@ -25,7 +25,7 @@ body {
   animation: loader 1s ease-in-out 3s forwards;
   background: linear-gradient(135deg, #e16fda 0%, #c666db 29%, #a25bdc 100%);
   opacity: 1;
-    }
+}
 .load {
   width: $size * 10;
   height: $size * 7.5;
@@ -53,8 +53,8 @@ body {
     }
   }
 }
-.texte-container{
-  margin: 50px;
+.texte-container {
+  padding: 50px;
   text-align: center;
 }
 header {
@@ -113,9 +113,9 @@ h1 {
   }
   &_texte {
     @include Bulle-pink;
-    :hover {
+    &:hover {
       box-shadow: 4px 4px 6px #000;
-  }
+    }
   }
 }
 .titre-section {
@@ -125,14 +125,15 @@ h1 {
 }
 .btn-fonctionnement {
   @include btn-fonctionement;
-  :hover {
-    background-color: #f5edff;
-  }
-
-  &_element--icone {   
-    color: grey;
-    :hover {
-      color: #9356dc;
+  &_element {
+    &:hover {
+      background-color: #f5edff;
+    }
+    &--icone {
+      color: grey;
+      &:hover {
+        color: #000;
+      }
     }
   }
 }
