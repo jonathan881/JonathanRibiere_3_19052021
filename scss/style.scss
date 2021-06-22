@@ -162,7 +162,7 @@ a {
     width: 20%;
     right: 10px;
     border-radius: 16px;
-    :hover {
+    &:hover {
       @include hover-index;
     }
   }
