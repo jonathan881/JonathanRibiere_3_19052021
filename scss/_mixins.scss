@@ -1,7 +1,6 @@
 @mixin Bulle-shadow {
   box-shadow: 4px 4px 6px #aaa;
 }
-
 @mixin Bg-heade {
   background: rgb(246, 246, 246);
   background: linear-gradient(
@@ -99,7 +98,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   &_element {
     display: flex;
     align-items: center;
@@ -289,12 +288,10 @@
     }
   }
 }
-
 @mixin bulle-menu1 {
   width: 30%;
   margin-left: 0px;
   transform: trasform 0 2s;
-
   &_nom {
     margin-left: 15px;
   }
